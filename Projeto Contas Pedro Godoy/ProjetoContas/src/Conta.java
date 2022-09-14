@@ -35,7 +35,7 @@ public class Conta {
     }
 
     public int sacar(double valor){
-        if(getSaldo() < valor){
+        if(getSaldo() > valor){
             setSaldo(getSaldo()-valor);
             return 1;
         }else{
